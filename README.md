@@ -1,6 +1,6 @@
 # LOOMFALL — 夜を織る
 
-**プレイURL：[https://onego15.github.io/loomfall/](https://onego15.github.io/loomfall/)** · [ソースコード](https://github.com/onego15/loomfall)
+**プレイURL：[https://onego15.github.io/survivors-gpt/](https://onego15.github.io/survivors-gpt/)** · [ソースコード](https://github.com/onego15/survivors-gpt)
 
 GitHub Pagesで公開済み。公開先のChromeで起動・操作・経験値回収・強化選択まで検証済み（HTTP 200、JavaScript/アセットエラー0件）。
 
@@ -58,7 +58,7 @@ npm run check
 npm run build
 ```
 
-`dist/` が静的サイト一式。画像・CSS・ES Modulesはすべて相対URLなので、`/loomfall/` のようなサブパスに対応する。
+`dist/` が静的サイト一式。画像・CSS・ES Modulesはすべて相対URLなので、`/survivors-gpt/` のようなサブパスに対応する。
 
 GitHub Pagesは main ブランチの `/ (root)` から配信。`.nojekyll` を含むビルド不要の静的サイトとして公開する。GitHub認証トークンに `workflow` スコープがないため、Actionsによる公開は使用していない。Actions用テンプレートは [docs/pages-workflow.yml](docs/pages-workflow.yml) に保存。必要な権限がある環境では `.github/workflows/pages.yml` に配置し、Settings → Pages → Source を GitHub Actions に設定してmainへpushすると、テスト・ビルド・公開を自動化できる。
 
@@ -86,7 +86,7 @@ GitHub Pagesは main ブランチの `/ (root)` から配信。`.nojekyll` を�
 - `npm test`：11 / 11 合格（エンジン8項目＋異なる3ビルドでの開始からクリアまでの通しテスト）。エンジンテスト：領域判定、自己交差、経験値吸引、狭い輪、無入力ダッシュ、境界、不正な能力選択、全能力併用、敗北・リトライ、ボス撃破、乱数の再現性。
 - 通しシミュレーション：無敵化なし・能力の後付けなし。領域 / 針 / 庭の3戦略、各3シード、計9回中7回クリア。針特化は1/3、領域と庭はそれぞれ3/3。これは限られた自動操作方針での結果で、一般プレイヤーの勝率ではない。詳細は [balance.json](docs/balance.json)。
 - ブラウザ操作：タイトル、遊び方、移動、領域生成、SPACE、ポーズ、レベルアップ3択、数字キー、390×844表示、タッチの結び。エラー0件。[browser-qa.json](docs/browser-qa.json)
-- 公開先の実操作：HTTP 200、全アセット正常。12秒進行し、15体撃破・3回の結び・Lv.2到達・強化選択1回を確認。ポーズ、再開、記憶の織機、公開先でのQA API無効化も検証。[public-qa.json](docs/public-qa.json)
+- 公開先の実操作（survivors-gpt）：HTTP 200、全アセット正常。00:11まで進行し、17体撃破・3回の結び・Lv.2到達・強化選択1回を確認。ポーズ、再開、記憶の織機、公開先でのQA API無効化も検証。[public-qa.json](docs/public-qa.json)
 - 終盤性能（録画停止、headless Chrome / 1200×800）：フレーム中央値16.2ms、平均21.7ms。描画平均3.78ms、シミュレーション平均1.32ms。205体前後の敵がいる6秒間の測定で、実機全般を保証するものではない。[performance.json](docs/performance.json)
 - 実ブラウザの終盤：通常プレイから最終ボス、エンディング、再挑戦、敗北画面まで確認。[ending-qa.json](docs/ending-qa.json)
 - 初期実装後、自動攻撃への偏り、経験値回収、全ビルドの同一化、針構成の弱さ、背景の視認性、終盤負荷を改善。具体的な変更は [DESIGN.md](docs/DESIGN.md)。

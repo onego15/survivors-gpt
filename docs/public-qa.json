@@ -1,12 +1,12 @@
 {
-  "date": "2026-10-25T23:59:47.856Z",
-  "url": "https://onego15.github.io/loomfall/",
+  "date": "2026-10-26T14:55:51.403Z",
+  "url": "https://onego15.github.io/survivors-gpt/",
   "status": 200,
   "hud": {
-    "time": "00:12",
+    "time": "00:11",
     "hp": "100 / 100",
     "level": "LV. 2",
-    "kills": "15",
+    "kills": "17",
     "weaves": "3",
     "build": 1,
     "canvas": [
@@ -30,87 +30,87 @@
   "errors": [],
   "responses": [
     {
-      "url": "https://onego15.github.io/loomfall/",
+      "url": "https://onego15.github.io/survivors-gpt/",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/style.css",
+      "url": "https://onego15.github.io/survivors-gpt/src/style.css",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/assets/emblem.svg",
+      "url": "https://onego15.github.io/survivors-gpt/assets/emblem.svg",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/app.js",
+      "url": "https://onego15.github.io/survivors-gpt/src/app.js",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/assets/garden.webp",
+      "url": "https://onego15.github.io/survivors-gpt/assets/garden.webp",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/engine.js",
+      "url": "https://onego15.github.io/survivors-gpt/src/engine.js",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/render.js",
+      "url": "https://onego15.github.io/survivors-gpt/src/audio.js",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/audio.js",
+      "url": "https://onego15.github.io/survivors-gpt/src/render.js",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/qa-pilot.js",
+      "url": "https://onego15.github.io/survivors-gpt/src/qa-pilot.js",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/assets/emblem.svg",
+      "url": "https://onego15.github.io/survivors-gpt/assets/emblem.svg",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/assets/emblem.svg",
+      "url": "https://onego15.github.io/survivors-gpt/assets/emblem.svg",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/?test=1",
+      "url": "https://onego15.github.io/survivors-gpt/?test=1",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/style.css",
+      "url": "https://onego15.github.io/survivors-gpt/src/style.css",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/app.js",
+      "url": "https://onego15.github.io/survivors-gpt/src/app.js",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/assets/emblem.svg",
+      "url": "https://onego15.github.io/survivors-gpt/assets/emblem.svg",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/engine.js",
+      "url": "https://onego15.github.io/survivors-gpt/src/engine.js",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/render.js",
+      "url": "https://onego15.github.io/survivors-gpt/src/render.js",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/audio.js",
+      "url": "https://onego15.github.io/survivors-gpt/src/audio.js",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/src/qa-pilot.js",
+      "url": "https://onego15.github.io/survivors-gpt/src/qa-pilot.js",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/assets/garden.webp",
+      "url": "https://onego15.github.io/survivors-gpt/assets/garden.webp",
       "status": 200
     },
     {
-      "url": "https://onego15.github.io/loomfall/assets/emblem.svg",
+      "url": "https://onego15.github.io/survivors-gpt/assets/emblem.svg",
       "status": 200
     }
   ]

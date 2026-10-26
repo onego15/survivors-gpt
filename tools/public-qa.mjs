@@ -4,7 +4,7 @@ const require=createRequire(import.meta.url);let pw;try{pw=require('playwright')
 const browser=await pw.chromium.launch({headless:true,...(process.platform==='win32'?{executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe'}:{})});
 const page=await browser.newPage({viewport:{width:1440,height:960}});const errors=[],responses=[];
 page.on('pageerror',e=>errors.push(String(e)));page.on('response',r=>{responses.push({url:r.url(),status:r.status()});if(r.status()>=400)errors.push(`${r.status()} ${r.url()}`)});
-const url='https://onego15.github.io/loomfall/';const response=await page.goto(url);assert.equal(response.status(),200);await page.waitForTimeout(1200);assert.match(await page.title(),/LOOMFALL/);assert.equal(await page.evaluate(()=>window.__loom),undefined,'QA API is disabled in production');
+const url=process.env.GAME_URL||'https://onego15.github.io/survivors-gpt/';const response=await page.goto(url);assert.equal(response.status(),200);await page.waitForTimeout(1200);assert.match(await page.title(),/LOOMFALL/);assert.equal(await page.evaluate(()=>window.__loom),undefined,'QA API is disabled in production');
 await page.screenshot({path:'docs/public-title.png'});
 await page.locator('[data-id="frost"]').click();assert.equal(await page.locator('[data-id="frost"]').getAttribute('aria-pressed'),'true');
 await page.locator('#start').click();
